@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #263238;
+}
+
+.nav-link {
+    color: #263238 !important;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 587px;
+}
+
+.banner-text {
+    font-weight: 900;
+    padding-bottom: 25px;
+}
+
+.button-primary {
+    border: none;
+    color: #ffffff;
+    background-color: #1976d2;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 45px;
+}
