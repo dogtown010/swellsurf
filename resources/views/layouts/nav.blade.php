@@ -1,5 +1,5 @@
-<div style="box-shadow: 0px 6px 5px #00000029; position: relative; z-index: 1">
-    <nav class="navbar navbar-expand-lg navbar-light container">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="box-shadow: 0px 6px 5px #00000029; background-color: #fff;">
+    <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('img/swell_logo.png') }}" style="width: 200px;">
         </a>
@@ -10,15 +10,15 @@
         <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ACTIVITIES</a>
+                    <a class="nav-link" href="#activities">ACTIVITIES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ROOMS</a>
+                    <a class="nav-link" href="#rooms">ROOMS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
+                    <a class="nav-link" href="#contact">CONTACT US</a>
                 </li>
             </ul>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>

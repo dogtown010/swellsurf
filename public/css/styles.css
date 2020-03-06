@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Calibri', sans-serif;
     font-weight: 400;
     color: #263238;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 900;
 }
 
 .nav-link {
@@ -34,4 +42,151 @@ body {
     display: inline-block;
     font-size: 16px;
     border-radius: 45px;
+}
+
+.divider {
+    margin: 15px 0;
+}
+
+.bg-section {
+    background-image: 
+        url(../img/background_element_blue.png), 
+        url(../img/background_element_teal.png), 
+        url(../img/background_element_yellow.png);
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-position: 
+        -96% 13.5%, 
+        109% 62%, 
+        -2% 97%;
+    background-size: 
+        68%, 
+        32%, 
+        32%;
+    padding-bottom: 200px;
+}
+
+.activity-header {
+    padding: 0 80px;
+}
+
+.activity-img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.activity-desc {
+    padding-left: 10px;
+}
+
+.rooms {
+    width: 300px;   
+    background-color: #eeeeee;
+    border-radius: 15px;
+    box-shadow: 0px 3px 4px #cccccc;
+}
+
+.rooms img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.room-desc {
+    padding: 20px;
+}
+
+.room-desc h4 {
+    font-size: 20px;
+}
+
+.contact-section {
+    background-color: #eeeeee;
+}
+
+.contact-icon {
+    color: #42a5f5;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    padding-left: 80px;
+}
+
+.map-responsive {
+    padding-right: 80px;
+}
+
+.map-responsive iframe {
+    width: 500px;
+    height: 350px;
+}
+
+h3::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+@media screen and (max-width: 990px) {
+    .bg-section {
+        background-image: none;
+        padding-bottom: 40px;
+    }
+
+    .rooms {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .activity-header {
+        padding: 0 30px;
+    }
+
+    .activity-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .activity-desc {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .min-padding {
+        padding: 0 30px;
+    }
+
+    .contact-details {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .map-responsive {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .map-responsive iframe {
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 200px;
+    }
 }

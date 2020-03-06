@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/76a607765f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
     <title>@yield('title')</title>
 </head>
 <body>
@@ -20,5 +22,10 @@
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
+    <script>
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
 </body>
 </html>
